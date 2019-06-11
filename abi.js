@@ -1,47 +1,4 @@
-/* This is for example purposes */
-const contractABI = [
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "paramEndereco",
-				"type": "address"
-			},
-			{
-				"name": "paramEnderecoRua",
-				"type": "text"
-			},
-			{
-				"name": "paramCidade",
-				"type": "text"
-			},
-			{
-				"name": "paramEstado",
-				"type": "text"
-			},
-			{
-				"name": "paramMetragem",
-				"type": "uint256"
-			},
-			{
-				"name": "paramCaracteristicas",
-				"type": "text"
-			},
-			{
-				"name": "paramNomeProprietario",
-				"type": "string"
-			},
-			{
-				"name": "paramValorVenal",
-				"type": "uint256"
-			}
-		],
-		"name": "registraImovel",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
+[
 	{
 		"constant": true,
 		"inputs": [
@@ -62,6 +19,48 @@ const contractABI = [
 		"type": "function"
 	},
 	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "paramEndereco",
+				"type": "address"
+			},
+			{
+				"name": "paramEnderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "paramCidade",
+				"type": "string"
+			},
+			{
+				"name": "paramEstado",
+				"type": "string"
+			},
+			{
+				"name": "paramCaracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "paramNomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "paramMetragem",
+				"type": "uint256"
+			},
+			{
+				"name": "paramValorVenal",
+				"type": "uint256"
+			}
+		],
+		"name": "registraImovel",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"constant": true,
 		"inputs": [
 			{
@@ -74,6 +73,26 @@ const contractABI = [
 			{
 				"name": "endereco",
 				"type": "address"
+			},
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
 			},
 			{
 				"name": "nomeProprietario",
@@ -103,6 +122,26 @@ const contractABI = [
 				"type": "address"
 			},
 			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
 				"name": "nomeProprietario",
 				"type": "string"
 			},
@@ -115,12 +154,4 @@ const contractABI = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-];
-
-if (network === "4") {
-    contractAddress = "0x4ac6e9f36404a2930b7a3309d49b7072aa922686"; 
-} else {
-    contractAddress = "0x4ac6e9f36404a2930b7a3309d49b7072aa922686"; 
-}
-
-contract = web3.eth.contract(contractABI).at(contractAddress);
+]
