@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+S<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -104,7 +104,7 @@
         function registrarImovel() {
             event.preventDefault();
             $("#statusTransacao").html("&nbsp;");
-            contract.registraImovel(frmRegistro.endereco.value, frmRegistro.nomeProprietario.value, frmRegistro.valor.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0}, function (erro, resultado) {
+            contract.realStateRegister(frmRegistro.endereco.value, frmRegistro.nomeProprietario.value, frmRegistro.valor.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0}, function (erro, resultado) {
                 if (erro) {
                     console.log("registrarImovel");
                     console.error(erro);
