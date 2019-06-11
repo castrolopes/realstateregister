@@ -1,6 +1,6 @@
 pragma solidity 0.5.9;
 
-contract RegistroImovel {
+contract RealStateRegister {
     
     struct Imovel {
         address endereco;
@@ -31,9 +31,10 @@ contract RegistroImovel {
             paramCidade,
             paramEstado,
             paramCaracteristicas,
+            paramMetragem,
             paramNomeProprietario,
             paramValorVenal);
-        
+            
         livro1.push(novoImovel);
         
         livro2[paramEndereco] = novoImovel;
