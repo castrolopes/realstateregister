@@ -4,6 +4,10 @@ contract RegistroImovel {
     
     struct Imovel {
         address endereco;
+        string cidade;
+        string estado;
+        string caracteristicas;
+        uint metragem;
         string nomeProprietario;
         uint valorVenal;
     }
