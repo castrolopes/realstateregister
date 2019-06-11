@@ -1,4 +1,5 @@
-[
+/* This is for example purposes */
+const contractABI = [
 	{
 		"constant": true,
 		"inputs": [
@@ -154,6 +155,8 @@
 		"stateMutability": "view",
 		"type": "function"
 	}
+];
+
 if (network === "4") {
     contractAddress = "0x3b26a0d24d6426b3a30846c996634837c135ecb9"; 
 } else {
@@ -161,4 +164,3 @@ if (network === "4") {
 }
 
 contract = web3.eth.contract(contractABI).at(contractAddress);
-]
