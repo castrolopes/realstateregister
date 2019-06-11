@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Registro de imóvel</h1>
+        <h1>Seja Bem-vindo à mais segura forma de registro de imóveis.</h1>
         <br>
-        <h2>Obter proprietário imóvel</h2>
+        <pre>Nossos registros são realizados diretamente na Blockchain da Ethereum, sendo, portanto, permanentes e
+        garantindo total segurança quanto à sua imutabilidade e possibilidade de conferência por qualquer pessoa,
+        em qualquer lugar e a qualquer hora.</pre>
+        <h2>Se possuir o número da matrícula do imóvel que lhe interessa, verifique abaixo sua propriedade e outras informações:</h2>
         <div id="proprietario">
             <form action="#" method="get" name="formPesquisa" id="formPesquisa">
                 <div>
-                    <label for="matricula">Informe o número de matrícula do imóvel: </label>
+                    <label for="matricula">Informe a seguir o número de matrícula do imóvel que deseja consultar: </label>
                     <input type="number" name="matricula" id="matricula" />
                 </div>
                 <div>
@@ -27,21 +30,37 @@
         <br>
         <hr>
         <br>
-        <h2>Registrar um imóvel</h2>
+        <h2>Se você quiser registrar um imóvel, por favor siga as instruções abaixo:</h2>
         <br>
         <div id="registro">
             <form action="#" method="POST" name="formRegistro" id="formRegistro">
                 <div>
-                    <label for="endereco">Informe o endereço do imóvel: </label>
+                    <label for="estado">Informe a seguir o estado do imóvel: </label>
+                    <input type="text" name="estado" id="estado" />
+                </div>
+                <div>
+                    <label for="cidade">Informe a seguir a cidade do imóvel: </label>
+                    <input type="text" name="cidade" id="cidade" />
+                </div>
+                <div>
+                    <label for="endereco">Informe a seguir o endereço do imóvel: </label>
                     <input type="text" name="endereco" id="endereco" size="45" />
                 </div>
                 <div>
-                    <label for="nomeProprietario">Informe o nome do proprietário: </label>
+                    <label for="nomeProprietario">Informe a seguir o nome do proprietário: </label>
                     <input type="text" name="nomeProprietario" id="nomeProprietario" />
                 </div>
                 <div>
-                    <label for="valor">Informe o valor venal do imóvel: </label>
+                    <label for="valor">Informe a seguir o valor de venda do imóvel: </label>
                     <input type="number" name="valor" id="valor" />
+                </div>
+                <div>
+                    <label for="metragem">Informe a seguir a metragem do imóvel: </label>
+                    <input type="number" name="metragem" id="metragem" />
+                </div>
+                <div>
+                    <label for="caracteristicas">Informe a seguir as principais características do imóvel: </label>
+                    <input type="text" name="caracteristicas" id="caracteristicas" />
                 </div>
                 <div>
                     <button onclick="registrarImovel()">Registrar</button>
