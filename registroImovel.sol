@@ -4,6 +4,7 @@ contract RegistroImovel {
     
     struct Imovel {
         address endereco;
+        string enderecoRua;
         string cidade;
         string estado;
         string caracteristicas;
@@ -15,8 +16,23 @@ contract RegistroImovel {
     Imovel[] public livro1;
     mapping(address => Imovel) public livro2;
     
-    function registraImovel(address paramEndereco, string memory paramNomeProprietario, uint paramValorVenal) public {
-        Imovel memory novoImovel = Imovel(paramEndereco, paramNomeProprietario, paramValorVenal);
+    function registraImovel(
+        address paramEndereco,
+        string memory paramEnderecoRua,
+        string memory paramCidade,
+        string memory paramEstado,
+        string memory paramCaracteristicas,
+        string memory paramNomeProprietario,
+        uint paramMetragem,
+        uint paramValorVenal) public {
+        Imovel memory novoImovel = Imovel(
+            paramEndereco,
+            paramEnderecoRua,
+            paramCidade,
+            paramEstado,
+            paramCaracteristicas,
+            paramNomeProprietario,
+            paramValorVenal);
         
         livro1.push(novoImovel);
         
