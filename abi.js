@@ -8,6 +8,26 @@ const contractABI = [
 				"type": "address"
 			},
 			{
+				"name": "paramEnderecoRua",
+				"type": "text"
+			},
+			{
+				"name": "paramCidade",
+				"type": "text"
+			},
+			{
+				"name": "paramEstado",
+				"type": "text"
+			},
+			{
+				"name": "paramMetragem",
+				"type": "uint256"
+			},
+			{
+				"name": "paramCaracteristicas",
+				"type": "text"
+			},
+			{
 				"name": "paramNomeProprietario",
 				"type": "string"
 			},
