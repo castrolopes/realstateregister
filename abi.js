@@ -155,9 +155,9 @@
 		"type": "function"
 	}
 if (network === "4") {
-    contractAddress = "0xcae333e43b2b6dcd064edbe32343a93d1e09d760"; 
+    contractAddress = "0x3b26a0d24d6426b3a30846c996634837c135ecb9"; 
 } else {
-    contractAddress = "0xe7402e8cde5566c926f8103b793fa6eeec13c2b5"; 
+    contractAddress = "0x3b26a0d24d6426b3a30846c996634837c135ecb9"; 
 }
 
 contract = web3.eth.contract(contractABI).at(contractAddress);
