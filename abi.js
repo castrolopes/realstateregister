@@ -1,7 +1,7 @@
 /* This is for example purposes */
 const contractABI = [
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
 				"name": "matricula",
