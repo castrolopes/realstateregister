@@ -88,7 +88,7 @@ rS<!DOCTYPE html>
         function pesquisarImovel() {
             event.preventDefault();
             $("#resultadoPesquisa").html("");
-            contract.devolveTudo((frmPesquisa.matricula.value, function (erro, resultado) {
+            contract.devolveTudo(frmPesquisa.matricula.value, function (erro, resultado) {
                 if (erro) {
                     console.log("pesquisarImovel");
                     console.error(erro);
@@ -97,7 +97,7 @@ rS<!DOCTYPE html>
                     return
                 }
                 $("#resultadoPesquisa").html("O proprietário do imóvel informado é: " + resultado);
-            })
+            });
         }
 
         var frmRegistro = document.formRegistro;
@@ -120,7 +120,7 @@ rS<!DOCTYPE html>
                     return
                 }
                 waitForTxToBeMined(resultado, "#statusTransacao");
-            })
+            });
         }
     </script>
 </body>
