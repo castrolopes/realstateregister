@@ -88,7 +88,7 @@ rS<!DOCTYPE html>
         function pesquisarImovel() {
             event.preventDefault();
             $("#resultadoPesquisa").html("");
-            contract.devolveNomeProprietario(frmPesquisa.matricula.value, function (erro, resultado) {
+            contract.devolveTudo(frmPesquisa.matricula.value, function (erro, resultado) {
                 if (erro) {
                     console.log("pesquisarImovel");
                     console.error(erro);
