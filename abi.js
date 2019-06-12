@@ -8,11 +8,35 @@ const contractABI = [
 				"type": "uint256"
 			}
 		],
-		"name": "devolveNomeProprietario",
+		"name": "devolveTudo",
 		"outputs": [
 			{
 				"name": "",
 				"type": "string"
+			}
+			{
+				"name": "",
+				"type": "string"
+			}
+			{
+				"name": "",
+				"type": "string"
+			}
+			{
+				"name": "",
+				"type": "string"
+			}
+			{
+				"name": "",
+				"type": "string"
+			}
+			{
+				"name": "",
+				"type": "address"
+			}
+			{
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -50,10 +74,6 @@ const contractABI = [
 				"name": "paramMetragem",
 				"type": "uint256"
 			},
-			{
-				"name": "paramValorVenal",
-				"type": "uint256"
-			}
 		],
 		"name": "registraImovel",
 		"outputs": [],
@@ -97,11 +117,7 @@ const contractABI = [
 			},
 			{
 				"name": "nomeProprietario",
-				"type": "string"
-			},
-			{
-				"name": "valorVenal",
-				"type": "uint256"
+				"type": "string"			
 			}
 		],
 		"payable": false,
@@ -146,10 +162,6 @@ const contractABI = [
 				"name": "nomeProprietario",
 				"type": "string"
 			},
-			{
-				"name": "valorVenal",
-				"type": "uint256"
-			}
 		],
 		"payable": false,
 		"stateMutability": "view",
