@@ -1,6 +1,5 @@
 /* This is for example purposes */
 const contractABI = [
-	[
 	{
 		"constant": false,
 		"inputs": [
