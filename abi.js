@@ -179,7 +179,7 @@ const contractABI = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-]
+];
 if (network === "4") {
     contractAddress = "0xe9235a7ee4bf9fec80437f4f352d9dff1de6c44d"; 
 } else {
