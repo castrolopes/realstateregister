@@ -1,48 +1,6 @@
 /* This is for example purposes */
 const contractABI = [
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "matricula",
-				"type": "uint256"
-			}
-		],
-		"name": "devolveTudo",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-			{
-				"name": "",
-				"type": "string"
-			}
-			{
-				"name": "",
-				"type": "string"
-			}
-			{
-				"name": "",
-				"type": "string"
-			}
-			{
-				"name": "",
-				"type": "string"
-			}
-			{
-				"name": "",
-				"type": "address"
-			}
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
+	[
 	{
 		"constant": false,
 		"inputs": [
@@ -74,11 +32,58 @@ const contractABI = [
 				"name": "paramMetragem",
 				"type": "uint256"
 			},
+			{
+				"name": "paramValorVenal",
+				"type": "uint256"
+			}
 		],
 		"name": "registraImovel",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "matricula",
+				"type": "uint256"
+			}
+		],
+		"name": "devolveTudo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -117,7 +122,11 @@ const contractABI = [
 			},
 			{
 				"name": "nomeProprietario",
-				"type": "string"			
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -162,6 +171,10 @@ const contractABI = [
 				"name": "nomeProprietario",
 				"type": "string"
 			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
 		],
 		"payable": false,
 		"stateMutability": "view",
