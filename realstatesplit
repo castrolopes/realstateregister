@@ -1,0 +1,61 @@
+pragma solidity 0.5.9;
+
+contract RealStateRegister {
+    
+    struct Imovel {
+        string enderecoRua;
+        string cidade;
+        string estado;
+        string caracteristicas;
+        uint metragem;
+        string nomeProprietario;
+        uint valorVenal;
+    }
+    
+    Imovel[] public livro1;
+    mapping(string => Imovel) public livro2;
+    mapping(string => Imovel) public livro3;
+    mapping(string => Imovel) public livro4;
+    mapping(string => Imovel) public livro5;
+    mapping(string => Imovel) public livro6;
+    mapping(uint => Imovel) public livro7;
+    mapping(uint => Imovel) public livro8;
+    
+    function registraImovel(
+        string memory paramEnderecoRua,
+        string memory paramCidade,
+        string memory paramEstado,
+        string memory paramCaracteristicas,
+        string memory paramNomeProprietario,
+        uint paramMetragem,
+        uint paramValorVenal) public {
+        Imovel memory novoImovel = Imovel(
+            paramEnderecoRua,
+            paramCidade,
+            paramEstado,
+            paramCaracteristicas,
+            paramMetragem,
+            paramNomeProprietario,
+            paramValorVenal);
+            
+        livro1.push(novoImovel);
+        livro2[paramEnderecoRua] = novoImovel;
+        livro3[paramCidade] = novoImovel;
+        livro4[paramEstado] = novoImovel;
+        livro5[paramCaracteristicas] = novoImovel;
+        livro6[paramNomeProprietario] = novoImovel;
+        livro7[paramMetragem] = novoImovel;
+        livro8[paramValorVenal] = novoImovel;
+    }
+    
+    function devolveTudo(uint matricula) public view returns
+        (string memory, string memory, string memory, string memory, string memory, uint256)
+    {
+        return (livro1[matricula].nomeProprietario,
+        livro1[matricula].enderecoRua,
+        livro1[matricula].cidade,
+        livro1[matricula].estado,
+        livro1[matricula].caracteristicas,
+        livro1[matricula].metragem);
+    }
+}
