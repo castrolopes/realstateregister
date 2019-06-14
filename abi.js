@@ -4,10 +4,6 @@ const contractABI = [
 		"constant": false,
 		"inputs": [
 			{
-				"name": "paramEndereco",
-				"type": "address"
-			},
-			{
 				"name": "paramEnderecoRua",
 				"type": "string"
 			},
@@ -58,10 +54,6 @@ const contractABI = [
 			},
 			{
 				"name": "",
-				"type": "address"
-			},
-			{
-				"name": "",
 				"type": "string"
 			},
 			{
@@ -95,10 +87,6 @@ const contractABI = [
 		],
 		"name": "livro1",
 		"outputs": [
-			{
-				"name": "endereco",
-				"type": "address"
-			},
 			{
 				"name": "enderecoRua",
 				"type": "string"
@@ -137,15 +125,269 @@ const contractABI = [
 		"inputs": [
 			{
 				"name": "",
-				"type": "address"
+				"type": "string"
 			}
 		],
 		"name": "livro2",
 		"outputs": [
 			{
-				"name": "endereco",
-				"type": "address"
+				"name": "enderecoRua",
+				"type": "string"
 			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "livro3",
+		"outputs": [
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "livro4",
+		"outputs": [
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "livro5",
+		"outputs": [
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "livro6",
+		"outputs": [
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "livro7",
+		"outputs": [
+			{
+				"name": "enderecoRua",
+				"type": "string"
+			},
+			{
+				"name": "cidade",
+				"type": "string"
+			},
+			{
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
+				"name": "metragem",
+				"type": "uint256"
+			},
+			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "valorVenal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "livro8",
+		"outputs": [
 			{
 				"name": "enderecoRua",
 				"type": "string"
@@ -181,9 +423,7 @@ const contractABI = [
 	}
 ];
 if (network === "4") {
-    contractAddress = "0xe9235a7ee4bf9fec80437f4f352d9dff1de6c44d"; 
-} else {
-    contractAddress = "0xe9235a7ee4bf9fec80437f4f352d9dff1de6c44d"; 
+    contractAddress = "0xdd1578043535f2f6723f885499be3761de550e22"; 
 }
 
 contract = web3.eth.contract(contractABI).at(contractAddress);
