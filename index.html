@@ -11,12 +11,12 @@ rS<!DOCTYPE html>
     <div class="container">
         <h1><center><b><font color=brown>Seja bem-vindo à mais segura forma de registro de imóveis.</font></b></center></h1>
         <br>
-        <justified><font color="purple">
+        <justified><font color="deepgrey">
         Nossos registros são realizados diretamente na Blockchain da Ethereum, sendo, portanto, permanentes e
         garantindo total segurança quanto à sua imutabilidade e possibilidade de conferência por qualquer pessoa,
         em qualquer lugar e a qualquer hora.</font>
         </justified>
-        <h2><justified>Se possuir o número da matrícula do imóvel que lhe interessa, verifique abaixo sua propriedade e outras informações:</h2>
+        <h2><justified>Se você possuir o número da matrícula do imóvel que lhe interessa, verifique abaixo sua propriedade e outras informações:</h2>
         <div id="proprietario">
             <form action="#" method="get" name="formPesquisa" id="formPesquisa">
                 <div>
@@ -41,27 +41,27 @@ rS<!DOCTYPE html>
                     <input type="text" name="estado" id="estado" />
                 </div>
                 <div>
-                    <label for="cidade">Informe a seguir a cidade do imóvel: </label>
+                    <label for="cidade"><font color=red>Informe a seguir a cidade do imóvel: </font></label>
                     <input type="text" name="cidade" id="cidade" />
                 </div>
                 <div>
-                    <label for="enderecoRua">Informe a seguir o endereço do imóvel: </label>
+                    <label for="enderecoRua"><font color=red>Informe a seguir o endereço do imóvel: </font></label>
                     <input type="text" name="enderecoRua" id="enderecoRua" size="45" />
                 </div>
                 <div>
-                    <label for="nomeProprietario">Informe a seguir o nome do proprietário: </label>
+                    <label for="nomeProprietario"><font color=red>Informe a seguir o nome do proprietário: </font></label>
                     <input type="text" name="nomeProprietario" id="nomeProprietario" />
                 </div>
                 <div>
-                    <label for="valor">Informe a seguir o valor de venda do imóvel: </label>
+                    <label for="valor"><font color=red>Informe a seguir o valor de venda do imóvel: </font></label>
                     <input type="number" name="valor" id="valor" />
                 </div>
                 <div>
-                    <label for="metragem">Informe a seguir a metragem do imóvel: </label>
+                    <label for="metragem"><font color=red>Informe a seguir a metragem do imóvel: </font></label>
                     <input type="number" name="metragem" id="metragem" />
                 </div>
                 <div>
-                    <label for="caracteristicas">Informe a seguir as principais características do imóvel: </label>
+                    <label for="caracteristicas"><font color=red>Informe a seguir as principais características do imóvel: </font></label>
                     <input type="text" name="caracteristicas" id="caracteristicas" />
                 </div>
                 <div>
@@ -101,13 +101,13 @@ rS<!DOCTYPE html>
             event.preventDefault();
             $("#statusTransacao").html("&nbsp;");
             contract.registraImovel(
+                frmRegistro.nomeProprietario.value,
+                frmRegistro.caracteristicas.value,
                 frmRegistro.enderecoRua.value,
                 frmRegistro.cidade.value,
                 frmRegistro.estado.value,
-                frmRegistro.caracteristicas.value,
-                frmRegistro.nomeProprietario.value,
                 frmRegistro.metragem.value,
-                frmRegistro.valor.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0}, function (erro, resultado) {
+                frmRegistro.valorVenal.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0}, function (erro, resultado) {
                 if (erro) {
                     console.log("registrarImovel");
                     console.error(erro);
