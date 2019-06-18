@@ -113,7 +113,8 @@ rS<!DOCTYPE html>
                     console.log("registrarImovel");
                     console.error(erro);
                     alert("Houve um erro ao registrar esse imovel");
-            }
+                    return
+                }
                 waitForTxToBeMined(resultado, "#statusTransacao");
         });
     </script>
