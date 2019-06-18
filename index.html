@@ -107,15 +107,15 @@ rS<!DOCTYPE html>
                 frmRegistro.cidade.value,
                 frmRegistro.estado.value,
                 frmRegistro.metragem.value,
-                frmRegistro.valorVenal.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0}, function (erro, resultado) {
+                frmRegistro.valorVenal.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0},
+            function (erro, resultado) {
                 if (erro) {
                     console.log("registrarImovel");
                     console.error(erro);
                     alert("Houve um erro ao registrar esse imovel");
-                    return
-                }
+            }
                 waitForTxToBeMined(resultado, "#statusTransacao");
-        }
+        });
     </script>
 </body>
 </html>
