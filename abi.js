@@ -3,6 +3,18 @@ const contractABI = [
 	{
 		"constant": false,
 		"inputs": [
+			[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "paramNomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "paramCaracteristicas",
+				"type": "string"
+			},
 			{
 				"name": "paramEnderecoRua",
 				"type": "string"
@@ -13,14 +25,6 @@ const contractABI = [
 			},
 			{
 				"name": "paramEstado",
-				"type": "string"
-			},
-			{
-				"name": "paramCaracteristicas",
-				"type": "string"
-			},
-			{
-				"name": "paramNomeProprietario",
 				"type": "string"
 			},
 			{
@@ -71,6 +75,10 @@ const contractABI = [
 			{
 				"name": "",
 				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -88,6 +96,14 @@ const contractABI = [
 		"name": "livro1",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -100,16 +116,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -131,6 +139,14 @@ const contractABI = [
 		"name": "livro2",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -143,16 +159,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -174,6 +182,14 @@ const contractABI = [
 		"name": "livro3",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -186,16 +202,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -217,6 +225,14 @@ const contractABI = [
 		"name": "livro4",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -229,16 +245,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -260,6 +268,14 @@ const contractABI = [
 		"name": "livro5",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -272,16 +288,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -303,6 +311,14 @@ const contractABI = [
 		"name": "livro6",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -315,16 +331,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -346,6 +354,14 @@ const contractABI = [
 		"name": "livro7",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -358,16 +374,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -389,6 +397,14 @@ const contractABI = [
 		"name": "livro8",
 		"outputs": [
 			{
+				"name": "nomeProprietario",
+				"type": "string"
+			},
+			{
+				"name": "caracteristicas",
+				"type": "string"
+			},
+			{
 				"name": "enderecoRua",
 				"type": "string"
 			},
@@ -401,16 +417,8 @@ const contractABI = [
 				"type": "string"
 			},
 			{
-				"name": "caracteristicas",
-				"type": "string"
-			},
-			{
 				"name": "metragem",
 				"type": "uint256"
-			},
-			{
-				"name": "nomeProprietario",
-				"type": "string"
 			},
 			{
 				"name": "valorVenal",
@@ -423,7 +431,7 @@ const contractABI = [
 	}
 ];
 if (network === "4") {
-    contractAddress = "0xdd1578043535f2f6723f885499be3761de550e22"; 
+    contractAddress = "0x5cee0df078e42357a0f7760054ba7a10d797252f"; 
 }
 
 contract = web3.eth.contract(contractABI).at(contractAddress);
