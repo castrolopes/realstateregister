@@ -56,7 +56,7 @@ contract RealStateRegister {
         livro1[matricula].enderecoRua,
         livro1[matricula].cidade,
         livro1[matricula].estado,
-        livro1[matricula].metragem),
-        livro1[matricula].valorVenal;
+        livro1[matricula].metragem,
+        livro1[matricula].valorVenal);
     }
 }
