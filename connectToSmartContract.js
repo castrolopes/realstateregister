@@ -29,14 +29,14 @@ function waitForTxToBeMined(txHash, objStatus) {
         console.log(txReceipt); 
         if (txReceipt) {
             if (txReceipt.status == "0x1") {
-                $(objStatus).css("background-color", "DeepBlue");
+                $(objStatus).css("background-color", "Yellow");
                 $(objStatus).html("Record successfuly saved at block: " + txReceipt.blockNumber + " - Transaction hash: " + txHash);            
             } else {
-                $(objStatus).css("background-color", "Salmon");
+                $(objStatus).css("background-color", "Orange");
                 $(objStatus).html("There was an error - Transaction hash: " + txHash + " final status: " + txReceipt.status);            
             }
         } else {
-            $(objStatus).css("background-color", "orange");
+            $(objStatus).css("background-color", "Grey");
             $(objStatus).text("Transaction sent. Wait until it is mined. Transaction hash: " + txHash);
             window.setTimeout(waitForTxToBeMined, 1500, txHash, objStatus);
         }
