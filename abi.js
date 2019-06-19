@@ -427,6 +427,7 @@ const contractABI = [
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
+	}
 ];
 if (network == "4") {
     contractAddress = "0x5cee0df078e42357a0f7760054ba7a10d797252f"; 
