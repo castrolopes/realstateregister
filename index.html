@@ -1,4 +1,4 @@
-rS<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@ rS<!DOCTYPE html>
         <h2>Se você quiser registrar um imóvel, por favor siga as instruções abaixo:</h2>
         <br>
         <div id="registro">
-            <form action="#" method="POST" name="formRegistro" id="formRegistro">
+            <form name="formRegistro" id="formRegistro">
                 <div>
                     <label for="estado"><font color=red>Informe a seguir o estado do imóvel: </font></label>
                     <input type="text" name="estado" id="estado" />
@@ -97,7 +97,7 @@ rS<!DOCTYPE html>
         }
 
         var frmRegistro = document.formRegistro;
-        function registraImovel() {
+        function registrarImovel() {
             event.preventDefault();
             $("#statusTransacao").html("&nbsp;");
             contract.registraImovel(
