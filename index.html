@@ -103,14 +103,14 @@
         function registrarImovel() {
             event.preventDefault();
             $("#statusTransacao").html("&nbsp;");
-            contract.registrarImovel(
+            contract.registraImovel(
                 frmRegistro.nomeProprietario.value,
                 frmRegistro.caracteristicas.value,
                 frmRegistro.enderecoRua.value,
                 frmRegistro.cidade.value,
                 frmRegistro.estado.value,
                 frmRegistro.metragem.value,
-                frmRegistro.valorVenal.value, {from: web3.eth.accounts[0], gas: 3000000, value: 0},
+                frmRegistro.valorVenal.value, {from: web3.eth.accounts[0], gas: 7000000, value: 0},
             function (erro, resultado) {
                 if (erro) {
                     console.log("registrarImovel");
